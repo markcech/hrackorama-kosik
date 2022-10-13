@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import './style.css';
 
-const Amount = () => {
-  const [count, setCount] = useState(1);
+const Amount = ({ value }) => {
+  const [count, setCount] = useState(value);
 
   const handelIncrement = () => {
     setCount(count + 1);
